@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funcion Matematica</title>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script>
+		var triple = function(valor1){
+			return(valor1*3);
+		}
+		$('body').append($('<p>').text(triple(3)));
+		
+		var multiply = function(valor1, valor2){
+			return(valor1 * valor2);
+		}
+		$('body').append($('<p>').text(multiply(5,2)));
+
+		var divide = function(valor1,valor2){
+			return(valor1/valor2)
+		}
+		$('body').append($('<p>').text(divide(12,3)))
+
+		var remaider = function(valor1,valor2){
+			return(valor1%valor2)
+		}
+		$('body').append($('<p>').text(remaider(12,3)))
+
+		var  resultado = function(valor1,valor2,valor3,valor4){
+			var a=remaider(divide(multiply(triple(valor1),valor2),valor3),valor4);
+			return(a)
+		}
+		$('body').append($('<p>').text(resultado(5,12,12,3)))
+	</script>
+</body>
+</html>
